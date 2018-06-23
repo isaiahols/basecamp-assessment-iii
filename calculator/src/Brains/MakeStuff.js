@@ -12,7 +12,7 @@ export class MakeStuff extends React.Component {
     handleClick(){
         alert('How do I style this with CSS?')
     }
-
+    //I do not know that I understand how you can use css to style this stuff very well
     render(){
         return (
         <div>

@@ -8,6 +8,7 @@ export class GetNames extends React.Component{
             firstname: 'unknown',
             lastname: 'unknown',
             value: 'unknown'
+            //Do I put this here or should this be in the App.js?
         };
         //this.changeLastName = this.changeLastName.bind(this)
     }
@@ -16,7 +17,8 @@ export class GetNames extends React.Component{
     handleChange(event) {
         this.setState({ title: event.target.value })
     }
-
+    //I want to make a form that you can fill out and
+    //have the data available for printing somewhere else
     render(){
         return (
             <form>
@@ -24,11 +26,13 @@ export class GetNames extends React.Component{
                 <input type="text" name="firstname"/><br/>
                 Last name:<br/>
                 <input type="text" name="lastname"/><br/>
-                something<br/>
+                something<br/>         
                 <input type="text" name="title" value={this.state.title}
                 onChange={this.handleChange.bind(this)}/>
                 <input type="submit" value="submit"/>
             </form>
+            //I got the last thing from the internet and do not know exatly what it does.
+            
         );
     }
 }
